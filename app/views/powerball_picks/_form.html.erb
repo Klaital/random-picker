@@ -1,0 +1,48 @@
+<%= form_for([user, powerball_pick]) do |f| %>
+  <% if powerball_pick.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(powerball_pick.errors.count, "error") %> prohibited this powerball_pick from being saved:</h2>
+
+      <ul>
+      <% powerball_pick.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  
+  <div class="field">
+    <%= f.label :draw_on %>
+    <%= f.datetime_select :draw_on %>
+  </div>
+
+  <div class="field">
+    <%= f.label :powerball %>
+    <%= f.number_field :powerball %>
+  </div>
+
+  <div class="field">
+    <%= f.label :wb1 %>
+    <%= f.number_field :wb1 %>
+  </div>
+  <div class="field">
+    <%= f.label :wb2 %>
+    <%= f.number_field :wb2 %>
+  </div>
+  <div class="field">
+    <%= f.label :wb3 %>
+    <%= f.number_field :wb3 %>
+  </div>
+  <div class="field">
+    <%= f.label :wb4 %>
+    <%= f.number_field :wb4 %>
+  </div>
+  <div class="field">
+    <%= f.label :wb5 %>
+    <%= f.number_field :wb5 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

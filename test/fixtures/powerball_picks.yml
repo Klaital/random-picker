@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  draw_on: 2016-10-29 11:15:23
+  powerball: 1
+
+two:
+  user: two
+  draw_on: 2016-10-29 11:15:23
+  powerball: 1

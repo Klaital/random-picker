@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Powerball Picks</h1>
+
+<table class="lottery-picks">
+  <thead>
+    <tr>
+      <th>Draw Date</th>
+      <th>Ball #1</th>
+      <th>Ball #2</th>
+      <th>Ball #3</th>
+      <th>Ball #4</th>
+      <th>Ball #5</th>
+      <th class="Powerball">Powerball</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <% @powerball_picks.each do |powerball_pick| %>
+    <%= render 'row', powerball_pick: powerball_pick %>
+  <% end %>
+  <tbody>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Powerball Pick', new_user_powerball_pick_path %>

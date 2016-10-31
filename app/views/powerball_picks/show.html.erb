@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Draw on:</strong>
+  <%= @powerball_pick.draw_on %>
+</p>
+
+<table class="lottery-picks">
+  <thead>
+    <tr>
+      <th>Draw Date</th>
+      <th>Ball #1</th>
+      <th>Ball #2</th>
+      <th>Ball #3</th>
+      <th>Ball #4</th>
+      <th>Ball #5</th>
+      <th class="Powerball">Powerball</th>
+    </tr>
+  </thead>
+  <tbody>
+  <%= render 'row', user: @user, powerball_pick: @powerball_pick %>
+  </tbody>
+</table>
+
+<%= link_to 'Edit', edit_user_powerball_pick_path([@user, @powerball_pick]) %> |
+<%= link_to 'Back', user_powerball_picks_path %>

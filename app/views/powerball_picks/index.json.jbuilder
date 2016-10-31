@@ -1,0 +1,1 @@
+json.array! @powerball_picks, partial: 'powerball_picks/powerball_pick', as: :powerball_pick

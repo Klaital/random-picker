@@ -1,0 +1,12 @@
+<tr>
+  <td><%= powerball_pick.draw_on %></td>
+  <td><%= powerball_pick.wb1 %></td>
+  <td><%= powerball_pick.wb2 %></td>
+  <td><%= powerball_pick.wb3 %></td>
+  <td><%= powerball_pick.wb4 %></td>
+  <td><%= powerball_pick.wb5 %></td>
+  <td class="Powerball"><%= powerball_pick.powerball %></td>
+  <td><%= link_to 'Show', [user, powerball_pick] %></td>
+  <td><%= link_to 'Edit', edit_user_powerball_pick_path([powerball_pick.user, powerball_pick]) %></td>
+  <td><%= link_to 'Destroy', [user, powerball_pick], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+</tr>

@@ -1,0 +1,1 @@
+json.partial! "powerball_picks/powerball_pick", powerball_pick: @powerball_pick
